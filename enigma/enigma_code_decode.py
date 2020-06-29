@@ -12,8 +12,8 @@ def reflector(c):
 
 def enigma_one_char(c):
     c1 = r1[alphabet.find(c)]
-    c2 = r2[alphabet.find(c1)]
-    c3 = r3[alphabet.find(c2)]
+    c2 = r2[r2.find(c1)]
+    c3 = r3[r3.find(c2)]
     reflected = reflector(c3)
     c3 = alphabet[r3.find(reflected)]
     c2 = alphabet[r2.find(c3)]
